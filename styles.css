@@ -1,0 +1,154 @@
+/* estilo básico para o corpo da página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2d;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* estilo do cabeçalho */
+header {
+    background-color: #343541;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza a imagem, o título e a navegação horizontalmente */
+    text-align: center;  /* centraliza o texto */
+    border-bottom: 1px solid #4b4b63;
+}
+
+/* estilo da imagem de perfil */
+header img {
+    width: 180px; /* aumenta o tamanho da imagem */
+    height: 180px;
+    border-radius: 50%; /* arredonda a imagem */
+    margin-bottom: 15px; /* espaço abaixo da imagem */
+    border: 3px solid #eaeaea; /* borda ao redor da foto */
+}
+
+/* ajuste no título */
+header h1 {
+    color: #eaeaea;
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 10px; /* espaço abaixo do título */
+}
+
+/* navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* centraliza os itens de navegação */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #a8a8b3;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* estilo da seção principal */
+main {
+    flex: 1; /* faz o conteúdo ocupar o restante da altura disponível */
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+main p {
+    color: #d1d1e0;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* lista de projetos no portfólio */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* centraliza a lista e define uma largura máxima */
+}
+
+main ul li {
+    background-color: #2a2a40;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #4b4b63;
+}
+
+main ul li:hover {
+    background-color: #343541;
+}
+
+/* estilo dos botões */
+button, input[type="submit"] {
+    background-color: #4b4b63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #565680;
+}
+
+/* estilo do formulário de contato */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #eaeaea;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #2a2a40;
+    border: 1px solid #4b4b63;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* estilo do rodapé */
+footer {
+    background-color: #343541;
+    color: #a8a8b3;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #4b4b63;
+}
